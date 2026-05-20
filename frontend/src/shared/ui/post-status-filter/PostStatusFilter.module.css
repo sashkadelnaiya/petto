@@ -1,0 +1,29 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #ffca92;
+  background: #ffffff;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f0b1d;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: rgba(158, 183, 26, 0.08);
+}
+
+.btnActive {
+  border-color: #9eb71a;
+  background: rgba(158, 183, 26, 0.15);
+}

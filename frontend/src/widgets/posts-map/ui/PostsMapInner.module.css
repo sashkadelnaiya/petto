@@ -1,0 +1,87 @@
+.map {
+  min-height: min(70vh, 720px);
+  height: 100%;
+  width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.map :global(.petto-leaflet-marker) {
+  background: transparent !important;
+  border: none !important;
+}
+
+.map :global(.petto-pin) {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(15, 11, 29, 0.25);
+}
+
+.map :global(.petto-pin img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map :global(.petto-pin-empty) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map :global(.petto-pin-dot) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0f0b1d;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min(70vh, 720px);
+  height: 100%;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+}
+
+.emptyText {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.95rem;
+  color: #0f0b1d;
+  text-align: center;
+}
+
+.popupTitle {
+  display: block;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+  max-width: 12rem;
+}
+
+.popupLink {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9eb71a;
+  cursor: pointer;
+}
+
+.popupLink:hover {
+  text-decoration: underline;
+}

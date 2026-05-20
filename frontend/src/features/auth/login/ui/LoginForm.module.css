@@ -1,0 +1,138 @@
+.card {
+  width: min(100%, 22rem);
+  padding: 2rem 1.5rem 1.75rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 238, 218, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 12px 40px rgba(15, 11, 29, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  font-family: var(--font-body), sans-serif;
+}
+
+.title {
+  margin: 0 0 1.25rem;
+  text-align: center;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f0b1d;
+  letter-spacing: -0.02em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #0f0b1d;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(15, 11, 29, 0.06);
+}
+
+.input::placeholder {
+  color: #a3a2a2;
+}
+
+.input:focus {
+  outline: 2px solid rgba(158, 183, 26, 0.45);
+  outline-offset: 1px;
+}
+
+.fieldError {
+  font-size: 0.75rem;
+  color: #c53030;
+  margin-top: -0.15rem;
+}
+
+.submit {
+  margin-top: 0.35rem;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #9eb71a;
+  color: #ffffff;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(15, 11, 29, 0.12);
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+
+.submit:hover:not(:disabled) {
+  filter: brightness(1.03);
+}
+
+.submit:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.dividerText {
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.secondaryCta {
+  display: block;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #9eb71a;
+  color: #ffffff !important;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(15, 11, 29, 0.12);
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+
+.secondaryCta:hover {
+  filter: brightness(1.03);
+}
+
+.secondaryCta:active {
+  transform: scale(0.99);
+}
+
+.secondaryCta:focus-visible {
+  outline: 2px solid rgba(158, 183, 26, 0.6);
+  outline-offset: 2px;
+}

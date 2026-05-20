@@ -1,0 +1,23 @@
+.wrap {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 2rem;
+  box-sizing: border-box;
+  background-color: #f5efe6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color-scheme: light;
+  color: #0f0b1d;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+.main {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0.25rem 0;
+}
+
+.stub {
+  font-family: var(--font-body), sans-serif;
+  font-size: 1rem;
+  color: color-mix(in srgb, #0f0b1d 75%, transparent);
+  margin: 0;
+  max-width: 28rem;
+  margin-inline: auto;
+}

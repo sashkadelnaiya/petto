@@ -1,0 +1,1 @@
+export const MAP_SINGLE_POINT_PADDING = 0.04;

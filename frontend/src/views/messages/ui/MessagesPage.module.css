@@ -1,0 +1,249 @@
+.main {
+  padding: 0.25rem 0;
+  flex: 1;
+  min-height: 0;
+}
+
+.root {
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding-left: clamp(0rem, 2.4vw, 1.5rem);
+}
+
+.searchRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.searchCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  width: min(20rem, 100%);
+}
+
+.searchGrow {
+  display: grid;
+  grid-template-columns: 0fr;
+  min-width: 0;
+  transition: grid-template-columns 0.34s cubic-bezier(0.25, 0.85, 0.25, 1);
+}
+
+.searchGrowOpen {
+  grid-template-columns: 1fr;
+}
+
+.searchGrowInner {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.searchFieldWrap {
+  width: min(16rem, calc(100vw - 14rem));
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-inline-start: 6px;
+  padding-inline-end: 4px;
+}
+
+.searchShell {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #9eb71a;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.4rem 0.85rem 0.4rem 0.9rem;
+  min-height: 2.15rem;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 1px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #0f0b1d;
+}
+
+.searchInput::placeholder {
+  color: color-mix(in srgb, #0f0b1d 48%, transparent);
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.iconBtnImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card {
+  width: 100%;
+  border-radius: 2rem;
+  background: #ffffff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.state {
+  font-family: var(--font-body), sans-serif;
+  margin: 0;
+  padding: 1rem 1.5rem 1.4rem;
+  color: color-mix(in srgb, #0f0b1d 70%, transparent);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemLink {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  padding: 0.85rem 1.5rem;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+  color: #15131e;
+  font-weight: 700;
+}
+
+.preview {
+  margin: 0;
+  display: block;
+  line-height: 1.28;
+  padding-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(21, 19, 30, 0.6);
+}
+
+.statusIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.unreadDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #fea248;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+.skeletonWrap {
+  padding: 0.9rem 1.1rem;
+}
+
+.skeletonRow {
+  height: 5.2rem;
+  border-radius: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.skeletonRow:last-child {
+  margin-bottom: 0;
+}
+
+.shimmer {
+  --s-base: #e3e1dd;
+  --s-mid: #ebe9e5;
+  --s-glow: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(
+    105deg,
+    var(--s-base) 0%,
+    var(--s-mid) 32%,
+    var(--s-glow) 48%,
+    var(--s-mid) 54%,
+    var(--s-base) 100%
+  );
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  animation: shimmerSweep 1.45s linear infinite;
+}
+
+@keyframes shimmerSweep {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}
+
+.actionSheet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.actionBtn {
+  width: 100%;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.actionBtnDelete {
+  background: #fea248;
+  color: #ffffff;
+}

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@entities/*": [
+        "entities/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@screens/*": [
+        "screens/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@routers/*": [
+        "app/routers/*"
+      ],
+      "@contexts/*": [
+        "app/contexts/*"
+      ]
+    }
+  }
+}

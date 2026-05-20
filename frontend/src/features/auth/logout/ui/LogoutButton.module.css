@@ -1,0 +1,50 @@
+.button {
+  font-family: var(--font-display), sans-serif;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #9eb71a;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.button:focus-visible {
+  outline: 2px solid rgba(158, 183, 26, 0.55);
+  outline-offset: 2px;
+}
+
+.ghost {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.65rem;
+  background: transparent;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.ghost:hover:not(:disabled) {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ghost:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.ghost:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.35);
+  outline-offset: 2px;
+}

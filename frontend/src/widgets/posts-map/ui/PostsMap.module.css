@@ -1,0 +1,13 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min(70vh, 720px);
+  height: 100%;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, #0f0b1d 75%, transparent);
+}
