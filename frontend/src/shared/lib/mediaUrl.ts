@@ -1,10 +1,10 @@
-import { getBackendUrl } from "@/shared/lib/env";
+import { getPublicBackendUrl } from "@/shared/lib/env";
 
 export function absoluteUploadUrl(path: string): string {
   if (!path) return "";
   if (path.startsWith("http://") || path.startsWith("https://")) {
     return path;
   }
-  const base = getBackendUrl();
+  const base = getPublicBackendUrl();
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }

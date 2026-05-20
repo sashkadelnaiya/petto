@@ -5,9 +5,10 @@ const ONE_DAY_SEC = 60 * 60 * 24;
 const THIRTY_DAYS_SEC = 30 * 24 * 60 * 60;
 
 function baseOptions() {
+  const forceSecure = process.env.COOKIE_SECURE;
   return {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: forceSecure !== undefined ? forceSecure === "true" : process.env.NODE_ENV === "production",
     sameSite: "lax" as const,
     path: "/",
   };
